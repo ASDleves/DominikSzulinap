@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Szülinapodra
+    </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let modal = document.getElementById("myModal");
+        let btn = document.getElementById("openModal");
+        let span = document.getElementsByClassName("close")[0];
+    
+        // Ha a <p> elemre kattintunk, megnyílik a modal
+        btn.onclick = function() {
+            modal.style.display = "flex";
+        }
+    
+        // Ha a bezárás gombra kattintunk, bezárul a modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    
+        // Ha a modal háttérrészére kattintunk, szintén bezárul
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    });
+</script>
+    <main>
+        <header><h1>BOLDOG SZÜLETÉSNAPOT!!</h1></header>
+        <aside>
+            <h1>Ajándékom neked</h1>
+            <ol>
+                <li>1 játék kipróbálása ❌</li>
+                <li>5 gameszko invitáció bármikor❌ ❌ ❌ ❌ ❌</li>
+                <li>2 bármikor felkelős gameszko invitáció ❌ ❌ ❌ ❌ ❌</li>
+            </ol>
+            <h2>Szabályok</h2>
+            <p>Ezek azt jelentik hogy ha invitálsz, azonnal kell mennem, viszont nem érvényes akkor, ha dolgozok, lefixált programom van, vagy ha nem vagyok otthon</p>
+        </aside>
+        <article><p>Dominik, ma eljött a nap,
+            Mikor a világ rád kacsintgat.
+            Színes lufik, fényes torta,
+            Mindenki boldogan néz most oda.
+            
+            Mosolyogj hát, ez a te éved,
+            Kívánunk sok szép, nagy reményt,
+            Örömöt, sikert, vidám perceket,
+            És barátokkal telt éveket!
+            
+            Legyen csodás minden órád,
+            Álmaid váljanak valóra,
+            S szívedben mindig éljen a fény,
+            Boldog születésnapot, Dominik! Ég veled a remény! 🎉🎂🎁
+        </p>
+    </article>
+    <section><p id="openModal">Dominik faszáról egy kép</p>
+    </section>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="kepek/error.png" alt="Megjelenített kép">
+        </div>
+    </div>
+    </main>
+</body>
+</html>
