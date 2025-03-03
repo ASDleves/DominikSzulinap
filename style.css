@@ -2,7 +2,7 @@ body{
     background-image: url(kepek/hatter.png);
 }
 main{
-    width: 1000px;
+    width: 900px;
     margin: auto;
     background-color: darkgreen;
     display: grid;
